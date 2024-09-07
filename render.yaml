@@ -3,4 +3,5 @@ services:
     name: my-worker
     runtime: python
     buildCommand: "alembic upgrade head"
+    startCommand: "fastapi run"
       
