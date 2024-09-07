@@ -1,2 +1,6 @@
-build_commands:
-  - "alembic upgrade head"
+services:
+  - type: worker
+    name: my-worker
+    runtime: python
+    buildCommand: "alembic upgrade head"
+      
